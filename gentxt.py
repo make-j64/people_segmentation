@@ -15,10 +15,10 @@ for i in tqdm(range(len(img_list))):
   name = os.path.basename(img_list[i]).split(".")[0]
   trainval.write("%s\n" % name)
 
-for i in tqdm(range(len(img_list) - 400)):
+for i in tqdm(range(len(img_list) - 1000)):
   name = os.path.basename(img_list[i]).split(".")[0]
   train.write("%s\n" % name)
 
-for i in tqdm(range(len(img_list) - 400, len(img_list))):
+for i in tqdm(range(len(img_list) - 1000, len(img_list))):
   name = os.path.basename(img_list[i]).split(".")[0]
   val.write("%s\n" % name)
